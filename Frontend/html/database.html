@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leaves</title>
+    <link rel="stylesheet" href="../css/database.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2a5a50a96a.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <i class="fa-solid fa-tractor"></i>
+          <a class="navbar-brand" href="#">Multiplex Uganda</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Employees
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Holidays</a></li>
+                  <li><a class="dropdown-item" href="#">Leaves</a></li>
+                  <li><a class="dropdown-item" href="#">Attendance</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <!-- navbar ends here -->
+      <!-- <div class="month">
+        <ul>
+          <li class="prev">&#10094;</li>
+          <li class="next">&#10095;</li>
+          <li>August<br><span style="font-size:18px">2021</span></li>
+        </ul>
+      </div>
+      
+      <ul class="weekdays">
+        <li>Mo</li>
+        <li>Tu</li>
+        <li>We</li>
+        <li>Th</li>
+        <li>Fr</li>
+        <li>Sa</li>
+        <li>Su</li>
+      </ul>
+      
+      <ul class="days">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li><span class="active">10</span></li>
+        <li>11</li>
+        <li>12</li>
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+        <li>17</li>
+        <li>18</li>
+        <li>19</li>
+        <li>20</li>
+        <li>21</li>
+        <li>22</li>
+        <li>23</li>
+        <li>24</li>
+        <li>25</li>
+        <li>26</li>
+        <li>27</li>
+        <li>28</li>
+        <li>29</li>
+        <li>30</li>
+        <li>31</li>
+      </ul> -->
+    <h3 class="Employees">Employee Attendance Database</h3>
+    <table class="table">
+        <tr>
+            <th>Employee</th>
+            <th>Leave Type</th>
+            <th>From</th>
+            <th>To</th>
+            <th>No.of Days</th>
+            <th>Reason</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Namayanja Sarah</td>
+            <td>Maternity Leave</td>
+            <td>29th Feb 2004</td>
+            <td>1st March 2004</td>
+            <td>3</td>
+            <td>Going to Hospital</td>
+            <td>Approved</td>
+        </tr>
+        <tr>
+            <td>Opio Jackson</td>
+            <td>Paternity Leave</td>
+            <td>29th March 2004</td>
+            <td>1st April 2004</td>
+            <td>3</td>
+            <td>Going to Hospital</td>
+            <td>Approved</td>
+        </tr>
+        <tr>
+            <td>Musimenta Lawrence</td>
+            <td>Casual Leave</td>
+            <td>29th April 2004</td>
+            <td>1st May 2004</td>
+            <td>3</td>
+            <td>Personal</td>
+            <td>Pending</td>
+        </tr>
+        <tr>
+            <td>Ndagire Faith</td>
+            <td>Hospitalisation</td>
+            <td>29th May 2004</td>
+            <td>1st June 2004</td>
+            <td>3</td>
+            <td>Going to Hospital</td>
+            <td>New</td>
+        </tr>
+        <tr>
+            <td>Odongo Ivan</td>
+            <td>Medical Leave</td>
+            <td>29th June 2004</td>
+            <td>1st July 2004</td>
+            <td>3</td>
+            <td>Going to Hospital</td>
+            <td>Approved</td>
+        </tr>
+        <tr>
+            <td>Kitaka Hudson</td>
+            <td>Paternity Leave</td>
+            <td>29th July2004</td>
+            <td>1st August 2004</td>
+            <td>3</td>
+            <td>Going to Hospital</td>
+            <td>Declined</td>
+        </tr>
+        <tr>
+            <td>Mugenyi Kevin</td>
+            <td>Medical Leave</td>
+            <td>29th August 2004</td>
+            <td>1st September 2004</td>
+            <td>3</td>
+            <td>Going to Hospital</td>
+            <td>Approved</td>
+        </tr>
+        <tr>
+            <td>Nanteza Vanessa</td>
+            <td>Casual Leave</td>
+            <td>29th September 2004</td>
+            <td>1st October 2004</td>
+            <td>3</td>
+            <td>Personal</td>
+            <td>Declined</td>
+        </tr>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

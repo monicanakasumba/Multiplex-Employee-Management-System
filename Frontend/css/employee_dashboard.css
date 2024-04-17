@@ -1,0 +1,42 @@
+.sidebar li .submenu{ 
+	list-style: none; 
+	margin: 0; 
+	padding: 0; 
+	padding-left: 1rem; 
+	padding-right: 1rem;
+}
+.customised_item{
+	color: coral;
+	font-size: 18.5px;
+	font-weight: 500;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.customised_subitem{
+	color: coral;
+	font-size: 17px;
+	font-weight: 400;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.notification{
+	background-color: lightgreen;
+}
+.welcoming-remarks{
+	background-color: coral;
+	height: 250px;
+}
+.card{
+	box-shadow: 0 0 0 0.5px rgba(44, 29, 0, 0.25);
+
+}
+.card-body{
+	border-radius: 10px;
+	border-style: hidden;
+	border-collapse: collapse;
+
+}
+.btn{
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	box-shadow: 0 0 0 0.5px rgba(44, 29, 0, 0.25);
+}
