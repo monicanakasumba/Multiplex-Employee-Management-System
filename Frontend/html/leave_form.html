@@ -1,69 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leave Form</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/leave_form.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/leave_form.css">
+  <link rel="stylesheet" href="../css/employee_dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <title>Leave Form</title>
 </head>
 <body>
-  <div class="form">
-    <div class="tab-content flex-column d-flex justify-content-center">
-      <div id="addLeave" style="margin-top: 20px; margin-bottom: 20px;">   
-        <h1 style="text-align: center;">Leave Request Form</h1>
-        
-        <form action="/" method="post">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">First Name</label>
-            <input type="text" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="FirstName">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-            <input type="text" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="LastName">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <br>
-          <select class="form-select form-select-lg mb-3 custom-input-focus selection" aria-label=".form-select-lg example">
-            <option selected>Leave type</option>
-            <option value="1">Maternity Leave</option>
-            <option value="2">Paternity Leave</option>
-            <option value="3">Hospitalisation</option>
-            <option value="4">Medical Leave</option>
-            <option value="5">Casual Leave</option>
-          </select>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">From</label>
-            <input type="date" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="StartDate">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">To</label>
-            <input type="date" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="EndDate">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">No. of Days</label>
-            <input type="number" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="Days">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Remaining Leaves</label>
-            <input type="number" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="RemainingDays">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
-            <textarea class="form-control custom-input-focus" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <br>
-        
-        
-        <button type="submit" class="goat">Submit Leave</button>
-        
-        </form> 
 
-      </div>
+  <!-- navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+    <div class="container-fluid" style="background-color: coral;">
+        <a class="navbar-brand" href="#">
+            <img src="../images/logo_3.jpeg" alt="" width="50" height="60" class="d-inline-block align-text-inline">
+            Multiplex Limited
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../html/employee_dashboard.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else
+                                here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
     </div>
+</nav>
+
+
+<!-- Content area after the navigation bar -->
+<div class="container-fluid"> 
+
+    <!-- Sidebar -->
+    <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+            <a href="/"
+              class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+              <span class="fs-7 d-none d-sm-inline custom-sidebar"><span
+                class="fa fa-bars"></span>      Menu</span>
+            </a>
+              <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                  id="menu">
+                  <li class="nav-item">
+                      <a href="../html/employee_dashboard.html" class="nav-link align-middle px-0">
+                          <i class="icon-trash"></i> <span
+                              class="ms-1 d-none d-sm-inline customised_item"><span
+                              class="fa fa-house"></span>  Dashboard</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#submenu1" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                          <i class="fs-4 bi-speedometer2"></i> <span
+                              class="ms-1 d-none d-sm-inline customised_item"><span
+                                  class="fa fa-book"></span>  Attendance</span>
+                      </a>
+                      <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                          <li class="w-100">
+                              <a href="../html/attendance_form.html" class="nav-link px-0"> <span
+                                      class="d-none d-sm-inline customised_subitem">  Attendance Form</span> </a>
+                          </li>
+                          <li>
+                              <a href="../html/attendance.html" class="nav-link px-0"> <span
+                                      class="d-none d-sm-inline customised_subitem">  Attendance Records</span> </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#submenu2" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-speedometer2"></i> <span
+                            class="ms-1 d-none d-sm-inline customised_item"><span
+                            class="fa fa-clipboard"></span>  Leave</span> </a>
+                      <ul class="collapse show nav flex-column ms-1" id="submenu2" data-bs-parent="#menu">
+                          <li class="w-100">
+                              <a href="../html/leave_form.html" class="nav-link px-0"> <span
+                                      class="d-none d-sm-inline customised_subitem">Leave Request Form</span> </a>
+                          </li>
+                          <li>
+                              <a href="../html/database.html" class="nav-link px-0"> <span
+                                      class="d-none d-sm-inline customised_subitem">Leave Database</span> </a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-table"></i> <span
+                            class="ms-1 d-none d-sm-inline customised_item"><span
+                            class="fa fa-bell"></span>      Notifications</span></a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link px-0 align-middle">
+                        <i class="fs-4 bi-table"></i> <span
+                            class="ms-1 d-none d-sm-inline customised_item"><span
+                            class="fa fa-gears"></span>     Settings</span></a>
+                  </li>
+              </ul>
+              <hr>
+              <div class="dropdown pb-4">
+                  <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                      id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <img src="https://github.com/mdo.png" alt="hugenerd" width="30" height="30"
+                          class="rounded-circle">
+                      <span class="d-none d-sm-inline mx-1">Profile</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Content area besides the sidebar -->
+      <div class="col py-3">
+
+        <!-- leave request form -->
+        <div class="form">
+        <div class="tab-content flex-column d-flex justify-content-center">
+          <div id="addLeave" style="margin-top: 20px; margin-bottom: 20px;">   
+            <h1 style="text-align: center;">Leave Request Form</h1>
+            
+            <form action="/" method="post">
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">First Name</label>
+                <input type="text" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="FirstName">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Last Name</label>
+                <input type="text" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="LastName">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <br>
+              <select class="form-select form-select-lg mb-3 custom-input-focus selection" aria-label=".form-select-lg example">
+                <option selected>Leave type</option>
+                <option value="1">Maternity Leave</option>
+                <option value="2">Paternity Leave</option>
+                <option value="3">Hospitalisation</option>
+                <option value="4">Medical Leave</option>
+                <option value="5">Casual Leave</option>
+              </select>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">From</label>
+                <input type="date" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="StartDate">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">To</label>
+                <input type="date" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="EndDate">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">No. of Days</label>
+                <input type="number" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="Days">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Remaining Leaves</label>
+                <input type="number" class="form-control custom-input-focus" id="exampleFormControlInput1" placeholder="RemainingDays">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Comment</label>
+                <textarea class="form-control custom-input-focus" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <br>
+            
+            
+            <button type="submit" class="goat">Submit Leave</button>
+            
+            </form> 
+
+          </div>
+        </div>
+      </div>
   </div>
 
       

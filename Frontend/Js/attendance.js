@@ -2,11 +2,11 @@ const link ="http://localhost:7000/attendance"
 
 //fetching all the todos
 
-const fetchAllStudents = (student) => {
-    const studentData = JSON.stringify(student);
+const fetchAllEmployees = (employees) => {
+    const employeeData = JSON.stringify(employees);
     fetch(link, {
         method: "GET",
-        body: studentData,
+        body: employeeData,
         headers: {
             "Accept": "application/json",
             "Content-Type": "application/json"
@@ -14,21 +14,21 @@ const fetchAllStudents = (student) => {
     })
         .then((res) => res.json())
         .then((data) => { 
-            data.forEach((student) => {
+            data.forEach((employees) => {
                 
-                listStudents(student)
+                listEmployees(employees)
             })
         })
         .catch((error) => { console.log(error) })
         
 }
-fetchAllStudents();//invoking the fetchAll students funtion
+fetchAllEmployees();//invoking the fetchAll students funtion
 
 //creating dymanic table
 const tableBody = document.getElementById("tableBody")
 
-const listStudents = (student) => {
-    const { firstName, lastName, email, age } = student
+const listStudents = (employees) => {
+    const { fullName, email, age } = student
     
    
     const tableRow = document.createElement("tr")
